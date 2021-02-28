@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Next: Node",
+            "type": "pwa-node",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/next",
+            "runtimeArgs": [
+                "dev",
+                "-p",  
+                "3001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Next: Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:3001",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach Node Inspector",
+            "type": "node",
+            "request": "attach",
+            "skipFiles": ["<node_internals>/**"],
+            "port": 9229
+        },
+    ],
+    "compounds": [
+        {
+            "name": "Next: Full",
+            "configurations": ["Next: Node", "Next: Chrome"]
+        }
+    ]
+}

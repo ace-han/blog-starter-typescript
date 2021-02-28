@@ -1,3 +1,7 @@
+# Trial Run on next.js with typescript    
+demo in https://github.com/ace-han/resolution/issues/3#issuecomment-787452513
+
+
 # A statically generated blog example using Next.js, Markdown, and TypeScript
 
 This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
